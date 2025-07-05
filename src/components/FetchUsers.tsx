@@ -27,7 +27,7 @@ const FetchUsers = () => {
         <div>
             <h1>Users List:</h1>
             <ul>
-                {data.map(user => (
+                {data.map(( user: any ) => (
                     <li key={user.id}>
                         {user.name} - {user.email}
                     </li>

@@ -25,9 +25,9 @@ const FetchPosts = () => {
 
     return (
       <div>
-          <h2>Posts:</h2>
+          <h1>Posts:</h1>
           <ul style={{display: 'flex', alignItems: 'flex-start', gap: '24px'}}>
-            {data.map(post => (
+            {data.map(( post: any ) => (
               <li key={post.id}>
                 <section>
                   <h2>{post.title}</h2>
